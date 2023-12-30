@@ -1,0 +1,13 @@
+body {
+      background-image: url("Germania.webp");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+}
+
+.hero {
+  background-image: file("images/Germania.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
