@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Mods</title>
+	<style>
+		body {
+			margin: 0;
+			background: #262c26;
+			color: white;
+			font-family: sans-serif;
+		}
+
+		main {
+			width: min(900px, calc(100% - 40px));
+			margin: 40px auto;
+		}
+
+		.mod {
+			display: flex;
+			align-items: center;
+			gap: 24px;
+			width: min(650px, 100%);
+			margin-bottom: 32px;
+			padding: 20px;
+			box-sizing: border-box;
+			background: #3b463b;
+			border: 1px solid #718071;
+		}
+
+		.mod:nth-child(even) {
+			margin-left: auto;
+			text-align: right;
+			flex-direction: row-reverse;
+		}
+
+		.mod img {
+			width: 150px;
+			height: 150px;
+			flex: 0 0 150px;
+			object-fit: cover;
+		}
+
+		.mod h2 {
+			margin-top: 0;
+		}
+
+		.mod a,
+		.back-link {
+			color: #d6e8c5;
+		}
+
+		.back-link {
+			display: block;
+			margin-top: 20px;
+		}
+
+		@media (max-width: 600px) {
+			main {
+				width: calc(100% - 24px);
+				margin: 24px auto;
+			}
+
+			.mod,
+			.mod:nth-child(even) {
+				width: 100%;
+				margin-left: 0;
+				text-align: left;
+				flex-direction: column;
+				align-items: flex-start;
+			}
+
+			.mod img {
+				width: 120px;
+				height: 120px;
+				flex-basis: 120px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<section class="mod">
+			<img src="images/eawde_logo.png" alt="Example mod logo">
+			<div>
+				<h2>First Mod</h2>
+				<p>A short description of your first mod goes here.</p>
+				<a href="#">View mod</a>
+			</div>
+		</section>
+
+		<section class="mod">
+			<img src="images/neuordnungicon.png" alt="Second mod logo">
+			<div>
+				<h2>Second Mod</h2>
+				<p>A short description of your second mod goes here.</p>
+				<a href="#">View mod</a>
+			</div>
+		</section>
+
+		<a class="back-link" href="index.html">Return to Main Page</a>
+	</main>
+</body>
+</html>
